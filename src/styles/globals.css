@@ -1,0 +1,93 @@
+/* Custom styles for Chronix Vault */
+
+/* Slider styling */
+.slider-thumb::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #22d3ee, #a855f7);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
+}
+
+.slider-thumb::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #22d3ee, #a855f7);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
+}
+
+/* Background utilities */
+.bg-size-200 {
+  background-size: 200%;
+}
+
+.bg-pos-0 {
+  background-position: 0%;
+}
+
+.bg-pos-100 {
+  background-position: 100%;
+}
+
+/* Norse-inspired gradient animations */
+@keyframes mystical-pulse {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.mystical-gradient {
+  background: linear-gradient(-45deg, #22d3ee, #a855f7, #22d3ee, #a855f7);
+  background-size: 400% 400%;
+  animation: mystical-pulse 4s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(55, 65, 81, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #22d3ee, #a855f7);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #06b6d4, #9333ea);
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding-top: 6rem;
+  }
+}
+
+/* Magical text glow effect */
+.text-glow {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+/* Interactive element hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Rune font fallback */
+.rune-text {
+  font-family: 'Noto Sans Runic', 'Segoe UI Historic', serif;
+}
